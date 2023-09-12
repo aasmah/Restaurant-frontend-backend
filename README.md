@@ -1,6 +1,7 @@
 #Next-React Frontend for Restaurants
 Exercise03 is full rendering
-<img src = 'restaurants.png'>
+<img src = ![restaurants](https://github.com/aasmah/Restaurant-frontend-backend/assets/35153854/9afd7cb1-e4a9-4340-803b-3b3df7bea9d3)
+'restaurants.png'>
 
 ## use yarn and then yarn dev to run the code
 
