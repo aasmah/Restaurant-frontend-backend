@@ -98,3 +98,4 @@ export const withAuthSync = (Component) => {
 
   return Wrapper;
 };
+
