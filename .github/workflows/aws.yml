@@ -24,16 +24,7 @@
 #    See the documentation for each action used below for the recommended IAM policies for this IAM user,
 #    and best practices on handling the access key credentials.
 
-   "repository": {
-        "repositoryArn": "arn:aws:ecr:us-east-2:786685790327:repository/my-ecr-repo",
-        "registryId": "786685790327",
-        "repositoryName": "my-ecr-repo",
-        "repositoryUri": "786685790327.dkr.ecr.us-east-2.amazonaws.com/my-ecr-repo",
-        "createdAt": "2023-09-17T03:41:09+00:00",
-        "imageTagMutability": "MUTABLE",
-        "imageScanningConfiguration": {
-            "scanOnPush": false
-        },
+
 
 name: Deploy to Amazon ECS
 
