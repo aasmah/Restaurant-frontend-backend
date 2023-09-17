@@ -24,6 +24,17 @@
 #    See the documentation for each action used below for the recommended IAM policies for this IAM user,
 #    and best practices on handling the access key credentials.
 
+   "repository": {
+        "repositoryArn": "arn:aws:ecr:us-east-2:786685790327:repository/my-ecr-repo",
+        "registryId": "786685790327",
+        "repositoryName": "my-ecr-repo",
+        "repositoryUri": "786685790327.dkr.ecr.us-east-2.amazonaws.com/my-ecr-repo",
+        "createdAt": "2023-09-17T03:41:09+00:00",
+        "imageTagMutability": "MUTABLE",
+        "imageScanningConfiguration": {
+            "scanOnPush": false
+        },
+
 name: Deploy to Amazon ECS
 
 on:
@@ -32,7 +43,7 @@ on:
 
 env:
   AWS_REGION: US East (Ohio) us-east-2                   # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: MY_ECR_REPOSITORY           # set this to your Amazon ECR repository name
+  ECR_REPOSITORY: my-ecr-repo           # set this to your Amazon ECR repository name
   ECS_SERVICE: MY_ECS_SERVICE                 # set this to your Amazon ECS service name
   ECS_CLUSTER: MY_ECS_CLUSTER                 # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: MY_ECS_TASK_DEFINITION # set this to the path to your Amazon ECS task definition
