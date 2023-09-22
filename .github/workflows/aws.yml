@@ -92,3 +92,12 @@ jobs:
         service: ${{ env.ECS_SERVICE }}
         cluster: ${{ env.ECS_CLUSTER }}
         wait-for-service-stability: true
+
+    - name: Build and push Docker Image
+      uses: mr-smithers-excellent/docker-build-push @4
+      with:
+        image : repo n/ demo_appame 
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        Password: ${{ secrets.DOCKER_PASSWORD }}
+        
