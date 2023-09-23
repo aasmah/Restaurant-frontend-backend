@@ -15,7 +15,7 @@ jobs:
         run: echo ${{ secrets.DOCKERHUB_token }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }}
       - name: Get the version
         id: vars
-        run: echo ::set-output name=tag::$(echo ${github_Actions}}
+        run: echo ::set-output name=tag::$(echo ${GITHUB_ACTIONS}}
       - name: Build the tagged Docker image
         run: docker build -t aasmah80/restaurant-01 .
       - name: push the tagged Docker image
