@@ -17,7 +17,7 @@ jobs:
         id: vars
         run: echo ::set-output name=tag::$(echo ${GITHUB_REF:10})
       - name: Build the tagged Docker image
-        run: docker build -t aasmah80/restaurant-01 .
+        run: docker build -t aasmah80/restaurant-01 ./Dockerfile
       - name: push the tagged Docker image
         run: docker push aasmah80/restaurant-01
 
