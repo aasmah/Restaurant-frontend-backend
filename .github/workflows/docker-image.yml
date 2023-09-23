@@ -11,11 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: login to Docker Hub Registry
-        run: echo ${{ secrets.DOCKERHUB_token }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }}
+      - name: login to DockerHub Registry
+        run: echo ${{ secrets.DOCKERHUB_TOKEN }} |  docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
       - name: Get the version
         id: vars
-        run: echo ::set-output name=tag::$(echo ${GITHUB_ACTIONS}}
+        run: echo ::set-output name=tag::$(echo ${GITHUB_REF:10})
       - name: Build the tagged Docker image
         run: docker build -t aasmah80/restaurant-01 .
       - name: push the tagged Docker image
