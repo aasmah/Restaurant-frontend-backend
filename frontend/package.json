@@ -2,6 +2,9 @@
   "name": "restaurant-app",
   "version": "0.1.0",
   "private": true,
+  "bin": {
+    "awsec3_docker_express": "bin/awsec3_express_docker.js"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,8 +13,11 @@
   },
   "dependencies": {
     "@apollo/client": "^3.2.4",
+    "@aws-cdk/aws-ecs": "^1.204.0",
+    "@aws-cdk/aws-elasticloadbalancingv2": "^1.204.0",
     "@stripe/react-stripe-js": "^1.1.2",
     "@stripe/stripe-js": "^1.10.0",
+    "aws-cdk": "^2.96.2",
     "axios": "^0.21.0",
     "graphql": "^15.3.0",
     "isomorphic-fetch": "^3.0.0",
@@ -20,6 +26,12 @@
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "reactstrap": "^8.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.4",
+    "@types/react": "^18.2.22",
+    "aws-cdk": "^1.2.0",
+    "typescript": "^5.2.2"
   },
   "description": "Exercise05 is full Shopping Cart with Stripe Billing",
   "main": "index.js",
