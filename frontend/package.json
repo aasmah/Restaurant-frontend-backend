@@ -2,9 +2,7 @@
   "name": "restaurant-app",
   "version": "0.1.0",
   "private": true,
-  "bin": {
-    "awsec3_docker_express": "bin/awsec3_express_docker.js"
-  },
+ 
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -33,7 +31,7 @@
     "aws-cdk": "^1.2.0",
     "typescript": "^5.2.2"
   },
-  "description": "Exercise05 is full Shopping Cart with Stripe Billing",
+  "description": "restaurant App is full Shopping Cart with Stripe Billing",
   "main": "index.js",
   "author": "jrw@mit.edu",
   "license": "MIT"
