@@ -44,3 +44,34 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Running with Docker
 
 Before dockerizing the application and running the restaurantapp with the Dockerfile and docker-compose.yml, you will need to create your own .env file with credentials for strapi and mongodb. An example of what that file could look like is in env.txt file.
+
+##API Strapi
+Install dependencies
+$ yarn
+Run the server
+$ yarn dev
+build for production and launch server
+$ yarn build
+$ yarn start
+
+
+##Permissions configuration
+##For the Public role:
+
+Application
+Resaurant
+find
+findone
+Dish
+find
+
+##For the Authenticated role:
+Application
+Resaurant
+find
+findone
+Dish
+find
+Order
+create
+For detailed explanation on how things work, checkout the Strapi docs.
